@@ -1,1 +1,12 @@
-@import "tailwindcss";
+@import 'tailwindcss/preflight';
+@import 'tailwindcss/utilities';
+
+:root {
+  --max-w: 900px;
+  --sandbox-blue: 42, 66, 107;
+}
+
+body {
+  background: rgb(42, 66, 107);
+  color: #f3f4f6;
+}

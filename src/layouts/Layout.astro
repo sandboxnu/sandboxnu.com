@@ -1,21 +1,41 @@
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
-	</head>
-	<body>
-		<slot />
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/src/styles/global.css" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Sandbox | Northeastern</title>
+  </head>
+  <body>
+    <div class="bg-sandbox-blue text-gray-100 min-h-screen">
+      <header class="px-4 py-3 border-b border-slate-700/30">
+        <nav class="container mx-auto flex items-center gap-6">
+          <a class="text-white" href="/">Home</a>
+          <a class="text-white" href="/about">About</a>
+          <a class="text-white" href="/apply">Apply</a>
+          <a class="text-white" href="/clients">Clients</a>
+          <a class="text-white" href="/team">Team</a>
+        </nav>
+      </header>
+      <main class="container mx-auto px-4 py-8">
+        <slot />
+      </main>
+    </div>
+  </body>
 </html>
 
 <style>
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
-	}
+  html,
+  body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+  }
 </style>
